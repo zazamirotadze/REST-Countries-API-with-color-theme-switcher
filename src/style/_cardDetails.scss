@@ -1,0 +1,108 @@
+.card-details{
+    display: flex; 
+    justify-content: space-between;
+    @include respond(tab-port){
+        flex-direction: column;
+        
+    }
+   
+    &__0{
+    
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__link{
+        display: flex;
+        width: fit-content;
+        padding: 5px 20px;
+        align-items: center;
+        border-radius: 5px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        box-shadow: rgba($Very-Dark-Blue-1, 0.24) 0px 3px 8px;
+        & > div{
+            margin-left: 5px;
+        }
+    }
+    & > img{
+        width: 400px;
+        height: 350px;
+        display: block;
+        box-shadow: rgba($Very-Dark-Blue-1, 0.74) 0px 3px 8px;
+        @include respond(phone){
+           width: auto; 
+           max-width: 400px; 
+           height: auto; 
+           max-height: 350px;  
+        }
+    }
+    &__content-div{
+        
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+   
+        @include respond(tab-port){
+            width: 100%;    
+            margin-top: 40px;   
+        }
+        &-words{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            &-many{
+                display: flex;
+                justify-content: space-between;
+                @include respond(phone){
+                    flex-direction: column; 
+                    gap: 50px;      
+                }
+             
+                & p{
+                    margin-left: 5px;
+                }
+                &-2{
+                    max-width: 200px;
+                   
+                    @include respond(tab-port){
+                        max-width: 300px;       
+                    }
+                    @include respond(phone){
+                        max-width: none;     
+                    }
+                }
+            }
+        }
+    }
+}
+
+.details-btn{
+    min-width: 100px;
+    border: none;
+    box-shadow: rgba($Very-Dark-Blue-1, 0.24) 0px 3px 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.border-countries-div{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    @include respond(phone){
+        flex-direction: column; 
+        gap: 10px;
+     }
+    & > h5{
+        
+        min-width: 130px;
+    }
+    &__buttons-div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

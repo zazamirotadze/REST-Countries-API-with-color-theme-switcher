@@ -1,0 +1,38 @@
+.regionFilter{
+    border-radius: 5px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba($Very-Dark-Blue-1, 0.24) 0px 3px 8px;
+    @include respond(tab-port){
+        width: fit-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    & > div:nth-child(1){
+        display: flex;
+        align-items: center;
+        height: 100%;
+        
+
+        & > div{
+            margin-right: 30px;
+            
+        }
+    }
+    &__options-div{
+        position: absolute;
+        left: 0;
+        top: 55px;
+        width: 100%;
+        box-shadow: rgba($Very-Dark-Blue-1, 0.24) 0px 3px 8px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 5px;
+        & > div {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.filters-component{
+    display: flex;   
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include respond(tab-port){
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__input-div{
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        @include respond(tab-port){
+            max-width: 450px;
+        }
+        box-shadow: rgba($Very-Dark-Blue-1, 0.24) 0px 3px 8px;
+        & > input {
+            outline: none;
+            border: none;
+            margin-left: 15px;
+            width: 400px;
+        }
+
+    }
+}

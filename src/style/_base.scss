@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+   
+}
+
+body{
+    overflow-y:scroll;
+    
+}
+.App{
+    min-height: 100vh;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.link-class {
+    text-decoration: none;
+    color: inherit;
+}
+
+h5, p {
+    display: inline;
+    font-size: 14px;
+}
